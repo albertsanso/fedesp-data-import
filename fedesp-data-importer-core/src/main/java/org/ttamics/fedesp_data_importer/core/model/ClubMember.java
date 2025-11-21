@@ -72,4 +72,14 @@ public class ClubMember extends Entity {
     public Practicioner getPracticioner() {
         return practicioner;
     }
+
+    @Override
+    public String toString() {
+        return "ClubMember{" +
+                "id=" + id +
+                ", club=" + club +
+                ", practicioner=" + practicioner +
+                ", yearRanges=" + yearRanges +
+                '}';
+    }
 }

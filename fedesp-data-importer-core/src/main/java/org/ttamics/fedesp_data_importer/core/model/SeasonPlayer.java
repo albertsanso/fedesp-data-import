@@ -57,4 +57,14 @@ public class SeasonPlayer {
     public String getYearRange() {
         return yearRange;
     }
+
+    @Override
+    public String toString() {
+        return "SeasonPlayer{" +
+                "id=" + id +
+                ", clubMember=" + clubMember +
+                ", license=" + license +
+                ", yearRange='" + yearRange + '\'' +
+                '}';
+    }
 }

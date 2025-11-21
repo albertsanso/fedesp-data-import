@@ -59,4 +59,15 @@ public class Practicioner extends Entity {
     public Date getBirthDate() {
         return birthDate;
     }
+
+    @Override
+    public String toString() {
+        return "Practicioner{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", birthDate=" + birthDate +
+                '}';
+    }
 }

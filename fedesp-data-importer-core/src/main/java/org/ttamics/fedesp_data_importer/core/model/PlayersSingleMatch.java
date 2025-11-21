@@ -50,4 +50,15 @@ public class PlayersSingleMatch {
     public String getUniqueRowMatchId() {
         return uniqueRowMatchId;
     }
+
+    @Override
+    public String toString() {
+        return "PlayersSingleMatch{" +
+                "id=" + id +
+                ", seasonPlayerResultAbc=" + seasonPlayerResultAbc +
+                ", seasonPlayerResultXyz=" + seasonPlayerResultXyz +
+                ", matchContext=" + matchContext +
+                ", uniqueRowMatchId='" + uniqueRowMatchId + '\'' +
+                '}';
+    }
 }

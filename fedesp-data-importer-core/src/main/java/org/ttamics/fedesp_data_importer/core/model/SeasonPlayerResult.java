@@ -1,5 +1,6 @@
 package org.ttamics.fedesp_data_importer.core.model;
 
+import java.util.Arrays;
 import java.util.UUID;
 
 public class SeasonPlayerResult {
@@ -123,6 +124,22 @@ public class SeasonPlayerResult {
 
     public String getMatchLinkageId() {
         return matchLinkageId;
+    }
+
+    @Override
+    public String toString() {
+        return "SeasonPlayerResult{" +
+                "id=" + id +
+                ", season='" + season + '\'' +
+                ", competition='" + competition + '\'' +
+                ", jornada='" + jornada + '\'' +
+                ", group='" + group + '\'' +
+                ", seasonPlayer=" + seasonPlayer +
+                ", playerLetter='" + playerLetter + '\'' +
+                ", gamePoints=" + Arrays.toString(gamePoints) +
+                ", gamesWon=" + gamesWon +
+                ", matchLinkageId='" + matchLinkageId + '\'' +
+                '}';
     }
 }
 

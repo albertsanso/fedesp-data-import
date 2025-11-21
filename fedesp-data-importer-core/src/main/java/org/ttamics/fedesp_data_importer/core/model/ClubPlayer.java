@@ -16,4 +16,12 @@ public class ClubPlayer {
     public Club getClub() {
         return club;
     }
+
+    @Override
+    public String toString() {
+        return "ClubPlayer{" +
+                "seasonPlayer=" + seasonPlayer +
+                ", club=" + club +
+                '}';
+    }
 }

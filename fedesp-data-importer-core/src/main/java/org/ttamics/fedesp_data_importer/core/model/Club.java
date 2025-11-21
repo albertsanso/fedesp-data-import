@@ -52,4 +52,13 @@ public class Club extends Entity {
     public void updateAllRanges(List<String> newYearRanges) {
         yearRanges = newYearRanges;
     }
+
+    @Override
+    public String toString() {
+        return "Club{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", yearRanges=" + yearRanges +
+                '}';
+    }
 }

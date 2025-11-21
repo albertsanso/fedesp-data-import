@@ -21,6 +21,9 @@ public class CsvFileRowInfoExtractor {
     }
 
     private PlayerCsvInfo parsePlayerABC(MatchResultsDetailCsvFileRowInfo rowInfo) {
+        if (rowInfo.rowInfo().length > 23) {
+            System.out.println();
+        }
         return new PlayerCsvInfo(
                 rowInfo.rowInfo()[3],
                 rowInfo.rowInfo()[8],
